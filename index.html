@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html xmln="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+</head>
+<body>
+    <div class="wrapper">
+      <input type="checkbox" id="btn" hidden>
+      <label for="btn" class="menu-btn">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+      </label>
+ <nav id="sidebar">
+        <div class="title"></div>
+<ul class="list-items">
+<li><a href="#">Primer parcial</a>
+      <ul>
+              <li><a href="#">Intro</a></li>
+              <li><a href="#">DOM</a></li>
+              <li><a href="#">Responsive</a></li>
+            </ul>
+    
+    </li>  
+<li><a href="#">Segundo parcial</a>
+     <ul>
+              <li><a href="#">Drop Menu 1</a></li>
+              <li><a href="#">Drop Menu 2</a></li>
+        
+            </ul>
+    </li>
+<li><a href="#">tercer parcial</a>
+     <ul>
+              <li><a href="#">Drop Menu 1</a></li>
+              <li><a href="#">Drop Menu 2</a></li>
+              <li><a href="#">Drop Menu 3</a></li>
+              <li><a href="#">Drop Menu 4</a></li>
+              <li><a href="#">Drop Menu 5</a></li>
+            </ul>
+    </li>
+
+ <div class="icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+</ul>
+</nav>
+    </div>
+      <main>
+            <div class="content">
+                <div class="header">Diseño digital web adaptativo</div>
+                    <p>Carlos Alberto Ortega Chavez</p>
+                        <div class="line"></div>
+            </div>
+          <div class="titulo"><h2>Introduccion</h2></div>
+          <div class="contenedor">
+              <div class="texto_compl">
+                  <h4>Importancia del diseño responsive</h4>
+              <p>Érase una vez, todos los diseñadores web preocupándose cómo se vería su sitio web en dos o tres navegadores.
+
+                Ahora, con la multitud de dispositivos diferentes, la cuestión ya no es solo esa, ahora se debe saber cómo se ve un sitio web en los diferentes tipos de tamaño de pantalla, ya sea un ordenador, un tablet o un móvil. Ahí es donde entra en juego la importancia del diseño web responsive o  Responsive Web Design, RWD por sus siglas en inglés.</p> <br>
+                   <h4>¿Qué es el diseño web responsive?</h4>
+                  <p>Diseño web responsive es una manera de diseñar y codificar un sitio web que hace que cada elemento de la navegación del sitio sea ajustable basado en el tamaño de pantalla. Texto, imágenes y vídeos, todos se mueven en su posición apropiada sobre la base de qué tan grande es el espacio de visualización disponible. Donde una vez que hubo una versión móvil y de escritorio del mismo sitio web, ahora con un diseño que responde (RWD) sólo necesita tener un sitio web.</p><br>
+                    <h4>Importancia del diseño responsive</h4>
+              <p>El diseño responsive permite reducir el tiempo de desarrollo, evita los contenidos duplicados, y aumenta la viralidad de los contenidos ya que permite compartirlos de una forma mucho más rápida y natural</p> <br>
+                  <img src="images/dise%C3%B1o.jpg" alt="" width="500" height="250">
+                  
+                  <h4>especificidad</h4>
+              <p><span>La especificidad</span> es el medio por el cual los navegadores deciden qué valores de propiedad CSS son los más relevantes para un elemento y, por lo tanto, se aplicarán.</p><br>
+               <h4>¿Cómo se calcula la especificidad?</h4>
+              <p>La especificidad solo se aplica cuando el mismo elemento es el objetivo de varias declaraciones. Según las reglas de CSS, los elementos dirigidos directamente siempre tendrán prioridad sobre las reglas que un elemento hereda de su antepasado.</p><br>
+              <h4>Jerarquía de especificidad</h4>
+              <p>Cada selector tiene su lugar en la jerarquía de especificidad. Hay cuatro categorías que definen el nivel de especificidad de un selector:</p><br>
+               <h4>La Excepción !important</h4>
+              <p>Cuando se usa una regla !important en una declaración de estilo, esta declaración anula cualquier otra declaración. </p>   
+              <p>Sin embargo, usar !important es una mala práctica y debe evitarse porque dificulta la depuración al romper la cascada natural en sus hojas de estilo</p> <br> 
+                  <img src="images/image6-1.png" alt="" width="500" height="250">
+              </div>
+              
+          </div>
+          <div class="titulo"><h2>Propiedad display:</h2></div>
+          <div class="contenedor">
+              <div class="texto">
+                   <h4>display block</h4><hr>
+              <p>La propiedad display es una de las más complejas de CSS .El valor de visualización predeterminado para la mayoría de los elementos es block o inline.</p>
+               <p>Un elemento con display: block; siempre comienza en una nueva línea y ocupa todo el ancho disponible (se extiende hacia la izquierda y hacia la derecha tanto como sea posible).</p><br>
+              <p>display: none; se usa comúnmente con JavaScript para ocultar y mostrar elemento cuando el usuario realiza alguna acción como pulsar un botón o un enlaces sin eliminarlos ni crearlos nuevamente.</p>
+              </div>
+                <div class="ejemplo">
+                    <div id="cont_rect">
+                        <a href="#">Este es un elemento a en bloque</a><a href="#">Este es un elemento a en bloque</a><a href="#">Este es un elemento a en bloque</a>
+                        <div class="rect"></div><div class="rect"></div><div class="rect">        
+                        </div>
+                         
+                    </div>
+                    <div id="triangle"></div>
+                  </div>
+                </div>
+          
+          <div class="contenedor">
+              <div class="texto">
+                  <h4>display inline</h4><hr>
+              <p>Elementos con display: inline; Un elemento inline comienza en una nueva línea y solo ocupa el ancho que sea necesario. </p>
+               <p>display: inline-block ; permite establecer un ancho y una altura en el elemento. Además, con display: inline-block ; se respetan los margin y padding, que con display: inline no son respetados.</p>
+              </div>
+                <div class="ejemplo">
+                    <div id="cont_rectan">
+                        <div class="rect"></div><div class="rect"></div><div class="rect">        
+                        </div>
+                    </div>
+                    <div id="elem_a">
+                    <a href="#"> elemento a en linea ,</a> <a href="#">elemento a en linea</a>
+                    </div> 
+              </div>
+            </div>
+          <div class="titulo"><h2>Propiedad position:</h2></div>
+            <div class="contenedor">
+              <div class="texto">
+                  <h4>absolute</h4><hr>  
+              <p>El elemento es removido del flujo normal del documento, sin crearse espacio alguno para el elemento en el esquema de la página. Es posicionado relativo a su ancestro posicionado más cercano, si lo hay; de lo contrario, se ubica relativo al bloque contenedor inicial. Su posición final está determinada por los valores de top, right, bottom, y left. </p><br>
+               <p>Este valor crea un nuevo contexto de apilamiento cuando el valor de z-index no es auto. Elementos absolutamente posicionados pueden tener margen, y no colapsan con ningún otro margen.
+              </p>
+              </div>
+               <div class="ejemplo">
+                    
+                        <div class="circle"><div id="circlelit"></div></div>
+                   
+              </div>
+            </div>
+         <div class="contenedor">
+              <div class="texto">
+                  <h4>relative</h4><hr>  
+              <p>EEl elemento es posicionado de acuerdo al flujo normal del documento, y luego es desplazado con relación a sí mismo, con base en los valores de top, right, bottom, and left. El desplazamiento no afecta la posición de ningún otro elemento; por lo que, el espacio que se le da al elemento en el esquema de la página es el mismo como si la posición fuera static. Este valor crea un nuevo contexto de apilamiento, donde el valor de z-index no es auto. </p>
+              </div>
+               <div class="ejemplo">
+                        <div class="circle"></div>
+              </div>
+            </div>
+          <!--<div class="contenedor">
+              <div class="texto">
+                  <h4>fixed</h4><hr>  
+              <p>El elemento es removido del flujo normal del documento, sin crearse espacio alguno para el elemento en el esquema de la página. Es posicionado con relación al bloque contenedor inicial establecido por el viewport, excepto cuando uno de sus ancestros tiene una propiedad transform, perspective, o filter establecida en algo que no sea none , en cuyo caso ese ancestro se comporta como el bloque contenedor. (Notar que hay inconsistencias del navegador con perspective y filter contribuyendo a la formación del bloque contenedor.) Su posición final es determinada por los valores de top, right, bottom, y left. </p><br>
+              <p>Estos valores siempre crean un nuevo contexto de apilamiento. En documentos impresos, el elemento se coloca en la misma posición en cada página. </p>
+                  
+          </div>
+               <div class="ejemplo">
+                      
+              </div>
+              
+            </div>
+          <div class="contenedor">
+              <div class="texto">
+                  <h4>sticky</h4><hr>  
+              <p>El elemento es posicionado de acuerdo al flujo normal del documento, y luego es desplazado con relación a su ancestro que se desplace más cercano y su bloque contenedor (ancestro en nivel de bloque más cercano) incluyendo elementos relacionados a tablas, basados en los valores de top, right, bottom, y left. El desplazamiento no afecta la posición de ningún otro elmento.</p>
+              <p>Estos valores siempre crean un nuevo contexto de apilamiento. Nótese que un elemento sticky se "adhiere" a su ancestro más cercano que tiene un "mecanismo de desplazamiento" (creado cuando el overflow es hidden, scroll, auto, o bien overlay), aún si ese ancestro no es el ancestro con desplazamiento más cercano.</p>    
+          </div>
+               <div class="ejemplo">
+                   
+              </div>
+              
+            </div>-->
+         <div class="titulo"><h2>Animation:</h2></div>
+               <div class="contenedor">
+              <div class="texto_compl">
+              <h4>@keyframes </h4>
+              <p>■La regla arroba @keyframes permite a los autores controlar los pasos intermedios en una secuencia de animación CSS mediante el establecimiento de keyframes (o puntos de trayectoria) a lo largo de la secuencia de animación que debe ser alcanzado por determinados puntos durante la animación. Esto le da un control más específico sobre los pasos intermedios de la secuencia de animación que se obtiene al dejar que el navegador maneje todo automáticamente.</p><br>
+              <p>■La lista de propiedades CSS que pueden ser animadas está disponible; cabe señalar que estas son las mismas propiedades soportadas por CSS transitions.</p><br>
+            <p>animation-name</p>
+              <p>animation-duration</p>
+                <p>animation-delay</p>
+                 <p>animation-timing-function</p>
+                  <p>animation-iteration-count</p>
+                  <p>animation-direction</p>
+                  <p>animation-fill-mode</p>
+                  <p>animation-play-state</p>
+                  <br>
+                <div id="cuadrado"></div>
+              </div>
+                   
+          </div>
+             
+              <div class="titulo"><h2>JavaScript:</h2></div>
+               <div class="contenedor">
+              <div class="texto_compl">
+              <h4>Eventos</h4>
+              <p> ■Un evento HTML puede ser algo que hace el navegador, o algo que hace un usuario.<br>
+                  ■JavaScript puede "reaccionar" en estos eventos.<br>
+                  ■Algunos eventos HTML comunes son:</p><br>
+          <p>onchange: Un elemento HTML ha sido cambiado</p>
+            <p>onclick: El usuario hace clic en un elemento HTML</p>
+              <p>onmouseover: El usuario mueve el mouse sobre un elemento HTML</p>
+                <p>onmouseout: El usuario aleja el mouse de un elemento HTML</p>
+                  <p>onkeydown: El usuario presiona una tecla del teclado</p>
+                    <p>onload: El navegador ha terminado de cargar la página</p>
+                  <br>
+               
+              </div>
+                   
+          </div>
+           <div class="contenedor">
+              <div class="texto">
+                
+                  <h2>DOM</h2><hr> 
+              <p>El Modelo de Objetos del Documento (DOM) es una interfaz de programación de aplicaciones (API) para documentos validos HTML y bien construidos XML. Define la estructura lógica de los documentos y el modo en que se accede y manipula. En la especificación DOM, el término "documento" es utilizado en un sentido amplio - the term "document" is used in the broad sense - cada vez más XML es utilizado como un medio de representar muchas clases diferentes de información que puede ser almacenada en sistemas diversos, y mucha de esta información se vería, en términos tradicionales, más como datos que como documentos. Sin embargo, XML presenta estos datos como documentos, y se puede utilizar DOM para manejar estos datos. </p><br>
+               <p>Con el Modelo de Objetos del Documento, los programadores pueden construir documentos, navegar por su estructura, y añadir, modificar, o eliminiar elementos y contenido. Se puede acceder a cualquier cosa que se encuentre en un documento HTML o XML, modificando, borrando o añadiendo utilizando el Modelo de Objetos del Documento, con algunas excepciones - en particular, aún no se han especificado aplicaciones DOM para los subconjuntos interneto y externos de XML.</p><br>
+              </div>
+               <div class="ejemplo">
+                        <img src="images/1-2.png" alt="" width="500" height="250">
+              </div>
+            </div>
+          <div id="cont_cards">
+              <div class="card"><button id="boton" class="boton">oncklic</button></div>
+              <div class="card"><button id="boton2" class="boton">onmouseover</button></div>
+              <div class="card"><button id="boton3" class="boton">onmoseout</button></div>
+                <script>
+                      (function(){
+                          var saludo = function (){
+                              alert('saludo!, este es un evento onclick');
+                          };
+                           var saludo2 = function (){
+                              alert('este es un evento onmouseover');
+                          };
+                           var saludo3 = function (){
+                              alert('este es un evento onmouseout');
+                          };
+                          var boton = document.getElementById('boton');
+                          var boton2 = document.getElementById('boton2');
+                          var boton3 = document.getElementById('boton3');
+                          boton.addEventListener("click", saludo);
+                           boton2.addEventListener("mouseover", saludo2);
+                           boton3.addEventListener("mouseout", saludo3);
+                      }())
+              </script>
+          </div>
+            
+                   <!--<div class="titulo"><h2>Propiedad Style:</h2></div>-->
+               <div class="contenedor">
+              <div class="texto_compl">
+              <h4>Propiedad style</h4><hr>
+              <p>La propiedad font-style permite establecer el estilo con el que se muestra el tipo de letra seleccionado mediante la propiedad font-family. ... Normalmente, la propiedad font-style se utiliza para mostrar un texto en cursiva (también llamada itálica o bastardilla).</p><br>
+               <p>Normalmente, la propiedad font-style se utiliza para mostrar un texto en cursiva (también llamada itálica o bastardilla). En el siguiente ejemplo, se modifica el estilo de la letra que muestra el párrafo:</p><br>
+              <img src="images/html.jpg" alt="" width="500" height="300">   
+                
+              </div>  
+          </div>
+             <div class="contenedor">
+              <div class="texto">
+                  <h2> viewport</h2><hr>  
+              <p>Cuando  el navegador renderiza un documento web, hace un escalado de los contenidos para que las páginas que están diseñadas para escritorio se vean de forma aceptable en un dispositivo móvil. En la mayoría de los casos, tendremos que hacer zoom para poder leerlos. Sin embargo, podemos configurar el viewport para indicar qué debe hacer.</p><br>
+                  <p>Para ello, disponemos de los siguientes parámetros en la etiqueta META:</p>
+                  <p>Width: anchura virtual (emulada) de la pantalla o anchura del viewport.<br>
+                    Height: altura virtual de la pantalla o anchura del viewport.<br>
+                    Initial-scale: la escala inicial del documento.<br>
+                    Minimum-scale: la escala mínima que se puede poner en el documento.<br>
+                    Maximum-scale: la escala máxima configurable en el documento.<br>
+                    User-scalable: si se permite o no al usuario hacer zoom.</p>
+                  
+              </div>
+               <div class="ejemplo">
+                        <img src="images/meta_viewport.png" alt="" width="500" height="250">
+              </div>
+            </div>
+            <div class="contenedor">
+              <div class="texto">
+                  <h4> media queries</h4><hr>  
+              <p>Las media queries (en español "consultas de medios") son útiles cuando deseas modificar tu página web o aplicación en función del tipo de dispositivo (como una impresora o una pantalla) o de características y parámetros específicos (como la resolución de la pantalla o el ancho del viewport del navegador)</p><br>
+               <p>Se utilizan para:</p><br>
+                  <p>-Aplicar estilos condicionales con las reglas-at @media e @import de CSS.</p>
+                  <p>-Indicar medios específicos en los elementos <link>, <source> y otros elementos HTML</p>
+                  <p>-Testear y monitorizar los estados de los medios usando los métodos de javascript</p><br>
+                  <p>-Testear y monitorizar los estados de los medios usando los métodos de javascript</p>
+              </div>
+               <div class="ejemplo">
+                        <img src="images/media-query-para-mobile-first.png" alt="" width="500" height="250">
+              </div>
+            </div>
+        <div class="contenedor">
+              <div class="texto_compl">
+              <h4>Operadores Lógicos</h4><hr>
+              <p>Se pueden redactar queries utilizando operadores lógicos, incluyendo not, and, y only.</p><br>
+               <p>Además se puede combinar múltiples queries en una lista separada por comas múltiples; si cualquiera de las queries en la lista es verdadera, la hoja de estilo asociada es aplicada. Esto es equivalente a una operación lógica "or".</p><br>
+                  <h4>And</h4>
+               <p>El operador and es usado para colocar juntas múltiples funciones multimedia. Un query básico con el tipo de medio especificado como all.</p>
+                  <h4>Or</h4>
+               <p>as listas separadas por comas se comportan como el operador or cuando es usado en media queries. Cuando utilice una lista separada por comas y alguno de los queries retorna verdadero, el estilo o la hoja de estilos sera aplicada. Cada query en una lista separada por comas es tratado como una query individual y cualquier operador aplicado a un medio no afectara a los demás. Esto significa que cada query en una lista separada por comas puede tener como objetivo diferentes medios, tipos y estados.</p>
+                  <h4>Not</h4>
+               <p>El operador not aplica a todo el query y retorna verdadero si es posible y sino retorna falso (como por ejemplo monochrome en un monitor a color o una ventana con un ancho mínimo de min-width: 700px en un monitor de 600px). Un not negara un query si es posible pero no a todos los query posibles si están ubicados en una lista separada por comas. El operador not no puede ser usado para negar un query individual, solo para un query completo. Por ejemplo, el not en el siguiente query es evaluado al final:</p>
+                   <p>Se pueden redactar queries utilizando operadores lógicos, incluyendo not, and, y only.</p>
+              <img src="images/1_5hk74pisbfEcsujBYEa1Mw.png" alt="" width="500" height="300">   
+                
+              </div>  
+          </div>
+           <div class="contenedor">
+              <div class="texto_compl">
+                  <h4> unidades de medida</h4><hr>  
+              <p>En CSS se pueden utilizar diferentes unidades de medida y no existe "la más recomendable". Es necesario conocerlas y saber cómo funcionan en el contexto para evaluar cuál es la más conveniente en cada caso.Las unidades se dividen en dos grupos: absolutas y relativas. Básicamente las unidades absolutas definen su valor de forma concreta y determinada, por ejemplo el centímetro. En cambio las medidas relativas lo hacen tomando otro elemento de referencia y a veces su contexto. En el caso del porcentaje, por ejemplo, cuando se indica sobre el valor width, éste se toma respecto del elemento contenedor. Es decir que, si tengo un contenedor que mide un ancho máximo de 1000 px y dentro coloco una div con un ancho de 25%, esta medida se tomará respecto de los 1000 px del contenedor, por lo tanto, en principio medirá 250px, pero si el contenedor se achica se achicará también.</p><br>
+               <h4>Medidas absolutas:</h4><br>
+                  <p>mm: milímetros</p>
+                  <p>cm: centímetros.</p>
+                  <p>in: pulgada ("inches", en inglés). Una pulgada equivale a 2.54 centímetros.</p>
+                  <p>pt: puntos. Un punto equivale a 1 /72 de pulgada, es decir, unos 0.35 milímetros.</p>
+                  <p>pc: picas. Una pica equivale a 12 puntos, o aproximadamente a 4.23 milímetros.</p>
+                  <p>px: pixel. Es la unidad mínima de resolución de la pantalla. En realidad suele considerársela una unidad absoluta, relativa o híbrida dependiendo del criterio que se analice.</p><br>
+                  
+                  <h4>Medidas relativas:</h4><br>
+                  <p>Porcentaje (%), es una de las unidades relativas más utilizadas. Su valor está calculado siempre en base a otro elemento. Si lo aplicamos sobre una fuente es relativo al tamaño de la fuente declarada en el contexto, pero si lo aplicamos al width de un elemento entonces es relativo al ancho de su contenedor.</p>
+                  <p>em: unidad relativa al tamaño de texto definido en un determinado contexto. El em es una unidad que proviene del diseño tipográfico y equivale al espacio que ocupa el ancho de una letra M ("m" mayúscula) de un determinado cuerpo y alfabeto. El em hace referencia al tamaño de letra que se está usando.</p>
+                  <p>ex: unidad relativa a la altura de la letra "x" minúscula de un determinado cuerpo y alfabeto. También es un concepto proveniente del diseño tipográfico.</p>
+                  <p>rem: funciona igual que el em, con la diferencia que es relativo al valor de la fuente del elemento html, y no tiene en cuenta el valor heredado o del elemento que lo contiene.</p>
+              </div>
+               
+               
+            </div>
+          </main>
+</body>
+</html>
